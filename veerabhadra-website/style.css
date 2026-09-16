@@ -356,24 +356,22 @@ ul { list-style: none; }
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(0,0,0,0.16); }
 
-/* Icon banner replaces photo — uses bg.jpg as banner with overlay */
+/* Icon banner — uses background.png as banner with overlay */
 .service-img-wrap {
-  height: 140px; overflow: hidden; position: relative;
+  height: 130px; overflow: hidden; position: relative;
   background:
     linear-gradient(rgba(30,20,10,0.52), rgba(30,20,10,0.52)),
     url('background.png') center/cover no-repeat;
   display: flex; align-items: center; justify-content: center;
 }
-.service-img-wrap img { display: none; } /* hide broken unsplash */
-.service-img-wrap::after {
-  font-size: 52px; line-height: 1;
-}
-/* Individual icon per card set via data attribute */
-.service-card:nth-child(1) .service-img-wrap::after { content: '🏭'; }
-.service-card:nth-child(2) .service-img-wrap::after { content: '🔄'; }
-.service-card:nth-child(3) .service-img-wrap::after { content: '🚚'; }
-.service-card:nth-child(4) .service-img-wrap::after { content: '✅'; }
-.service-card:nth-child(5) .service-img-wrap::after { content: '📋'; }
+.service-img-wrap img { display: none; }
+
+
+.service-card:nth-child(1) 
+.service-card:nth-child(2) 
+.service-card:nth-child(3) 
+.service-card:nth-child(4) 
+.service-card:nth-child(5) 
 
 .service-icon-circle {
   width: 50px; height: 50px; border-radius: 50%;
@@ -433,19 +431,19 @@ ul { list-style: none; }
 .rice-card:hover { border-color: var(--gold); transform: translateY(-6px); }
 
 .rice-img-wrap {
-  height: 160px; overflow: hidden; position: relative;
+  height: 150px; overflow: hidden; position: relative;
   background:
     linear-gradient(rgba(30,20,10,0.45), rgba(30,20,10,0.45)),
     url('background.png') center/cover no-repeat;
   display: flex; align-items: center; justify-content: center;
 }
 .rice-img-wrap img { display: none; }
-/* Large emoji icon per variety */
-.rice-card:nth-child(1) .rice-img-wrap::after { content: '🍚'; font-size: 56px; }
-.rice-card:nth-child(2) .rice-img-wrap::after { content: '🌾'; font-size: 56px; }
-.rice-card:nth-child(3) .rice-img-wrap::after { content: '🍲'; font-size: 56px; }
-.rice-card:nth-child(4) .rice-img-wrap::after { content: '💰'; font-size: 56px; }
-.rice-card:nth-child(5) .rice-img-wrap::after { content: '⭐'; font-size: 56px; }
+
+
+
+
+
+
 
 .rice-badge {
   position: absolute; top: 10px; right: 10px;
@@ -489,12 +487,12 @@ ul { list-style: none; }
   display: flex; align-items: center; justify-content: center;
 }
 .step-img img { display: none; }
-.process-step:nth-child(1) .step-img::after { content: '📱'; font-size: 46px; }
-.process-step:nth-child(2) .step-img::after { content: '📋'; font-size: 46px; }
-.process-step:nth-child(3) .step-img::after { content: '🏭'; font-size: 46px; }
-.process-step:nth-child(4) .step-img::after { content: '🚚'; font-size: 46px; }
-.process-step:nth-child(5) .step-img::after { content: '🏠'; font-size: 46px; }
-.process-step:nth-child(6) .step-img::after { content: '🔄'; font-size: 46px; }
+
+
+
+
+
+
 
 .step-badge {
   width: 36px; height: 36px; border-radius: 50%;
@@ -541,12 +539,12 @@ ul { list-style: none; }
   display: flex; align-items: center; justify-content: center;
 }
 .customer-img img { display: none; }
-.customer-card:nth-child(1) .customer-img::after { content: '🏘️'; font-size: 52px; }
-.customer-card:nth-child(2) .customer-img::after { content: '🏨'; font-size: 52px; }
-.customer-card:nth-child(3) .customer-img::after { content: '🍽️'; font-size: 52px; }
-.customer-card:nth-child(4) .customer-img::after { content: '🎓'; font-size: 52px; }
-.customer-card:nth-child(5) .customer-img::after { content: '🏢'; font-size: 52px; }
-.customer-card:nth-child(6) .customer-img::after { content: '📦'; font-size: 52px; }
+
+
+
+
+
+
 
 .customer-icon {
   font-size: 28px; margin: -18px auto 0;
@@ -853,3 +851,5 @@ ul { list-style: none; }
   0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
   50%       { box-shadow: 0 4px 32px rgba(37,211,102,0.85), 0 0 0 8px rgba(37,211,102,0.15); }
 }
+
+
