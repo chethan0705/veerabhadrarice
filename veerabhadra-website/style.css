@@ -181,8 +181,15 @@ ul { list-style: none; }
 }
 
 .hero-blessing {
-  font-size: 13px; color: var(--gold-lt); letter-spacing: 1px;
-  background: rgba(30,10,10,0.55); padding: 6px 16px; border-radius: 20px;
+  font-size: 15px;
+  font-family: 'Noto Sans Kannada', 'Lato', sans-serif;
+  font-weight: 600;
+  color: var(--gold-lt);
+  letter-spacing: 0.5px;
+  background: rgba(30,10,10,0.55);
+  padding: 8px 22px;
+  border-radius: 20px;
+  border: 1px solid rgba(200,146,42,0.4);
 }
 
 .hero-logo-ring {
@@ -356,22 +363,17 @@ ul { list-style: none; }
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(0,0,0,0.16); }
 
-/* Icon banner — uses background.png as banner with overlay */
+/* Icon banner — uses local image as banner with overlay */
 .service-img-wrap {
   height: 130px; overflow: hidden; position: relative;
-  background:
-    linear-gradient(rgba(30,20,10,0.52), rgba(30,20,10,0.52)),
-    url('background.png') center/cover no-repeat;
+  background: linear-gradient(rgba(30,20,10,0.30), rgba(30,20,10,0.30));
   display: flex; align-items: center; justify-content: center;
 }
-.service-img-wrap img { display: none; }
-
-
-.service-card:nth-child(1) 
-.service-card:nth-child(2) 
-.service-card:nth-child(3) 
-.service-card:nth-child(4) 
-.service-card:nth-child(5) 
+.service-img-wrap img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  display: block; opacity: 0.85;
+}
 
 .service-icon-circle {
   width: 50px; height: 50px; border-radius: 50%;
@@ -432,18 +434,16 @@ ul { list-style: none; }
 
 .rice-img-wrap {
   height: 150px; overflow: hidden; position: relative;
-  background:
-    linear-gradient(rgba(30,20,10,0.45), rgba(30,20,10,0.45)),
-    url('background.png') center/cover no-repeat;
+  background: rgba(30,20,10,0.10);
   display: flex; align-items: center; justify-content: center;
 }
-.rice-img-wrap img { display: none; }
-
-
-
-
-
-
+.rice-img-wrap img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  display: block; opacity: 0.9;
+  transition: transform .4s;
+}
+.rice-card:hover .rice-img-wrap img { transform: scale(1.07); }
 
 .rice-badge {
   position: absolute; top: 10px; right: 10px;
@@ -481,18 +481,14 @@ ul { list-style: none; }
 
 .step-img {
   height: 120px; overflow: hidden; position: relative;
-  background:
-    linear-gradient(rgba(30,20,10,0.50), rgba(30,20,10,0.50)),
-    url('background.png') center/cover no-repeat;
+  background: rgba(30,20,10,0.10);
   display: flex; align-items: center; justify-content: center;
 }
-.step-img img { display: none; }
-
-
-
-
-
-
+.step-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  display: block; opacity: 0.85;
+}
 
 .step-badge {
   width: 36px; height: 36px; border-radius: 50%;
@@ -533,18 +529,16 @@ ul { list-style: none; }
 
 .customer-img {
   height: 140px; overflow: hidden; position: relative;
-  background:
-    linear-gradient(rgba(30,20,10,0.48), rgba(30,20,10,0.48)),
-    url('background.png') center/cover no-repeat;
+  background: rgba(30,20,10,0.10);
   display: flex; align-items: center; justify-content: center;
 }
-.customer-img img { display: none; }
-
-
-
-
-
-
+.customer-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  display: block; opacity: 0.85;
+  transition: transform .4s;
+}
+.customer-card:hover .customer-img img { transform: scale(1.07); }
 
 .customer-icon {
   font-size: 28px; margin: -18px auto 0;
